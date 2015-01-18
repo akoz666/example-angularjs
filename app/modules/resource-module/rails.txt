@@ -1,0 +1,6 @@
+rails new RailsApp -d mysql
+cd RailsApp/
+bundle install [install gem]
+rails g scaffold Post name:string content:string [create ws]
+rake db:migrate [push to database]
+rails s  [lunch server]

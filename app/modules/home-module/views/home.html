@@ -1,0 +1,36 @@
+<div class="well" ng-repeat="post in posts" ng-if="!loading">
+    <div class="media">
+        <a class="pull-left" href="#">
+            <img class="media-object" src="{{post.photo}}">
+        </a>
+
+        <div class="media-body">
+            <h4 class="media-heading">{{post.title}}</h4>
+
+            <p class="text-right">By {{post.company}}</p>
+
+            <p>{{post.content}}</p>
+            <ul class="list-inline list-unstyled">
+                <li><span><i class="glyphicon glyphicon-tint"></i> {{post.country}} </span></li>
+                <li>|</li>
+                <a href="#/comments/{{post.id}}"><span><i class="glyphicon glyphicon-comment"></i> {{post.comments.length}} comments</span></a>
+                <li>|</li>
+                <!--<li>-->
+                <!--<span class="glyphicon glyphicon-star"></span>-->
+                <!--<span class="glyphicon glyphicon-star"></span>-->
+                <!--<span class="glyphicon glyphicon-star"></span>-->
+                <!--<span class="glyphicon glyphicon-star"></span>-->
+                <!--<span class="glyphicon glyphicon-star-empty"></span>-->
+                <!--</li>-->
+                <!--<li>|</li>-->
+                <li>
+                    <div>
+                        <span>
+                            <div star-rating rating-value="post.ratings" max=5></div>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<div class="row" ng-click="select(index)">
+    <div class="col-xs-2 col-md-1">
+        <img src="{{com.picture}}" class="img-circle img-responsive" alt=""/></div>
+    <div class="col-xs-10 col-md-11">
+        <div>
+            <strong>{{com.title}}</strong>
+
+            <div class="mic-info">
+                By: <a href="#">{{com.name.first + " " + com.name.last}}</a> on
+                {{com.date}}
+            </div>
+        </div>
+        <div class="comment-text">
+            {{com.content}}
+        </div>
+        <div class="action">
+            <button type="button" class="btn btn-primary btn-xs" title="Edit">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </button>
+            <button type="button" class="btn btn-success btn-xs" title="Approved">
+                <span class="glyphicon glyphicon-ok"></span>
+            </button>
+            <button type="button" class="btn btn-danger btn-xs" title="Delete">
+                <span class="glyphicon glyphicon-trash"></span>
+            </button>
+        </div>
+    </div>
+</div>

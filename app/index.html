@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <!-- build:css css/combined.css -->
+    <link rel="stylesheet" href="bower_components/jqueryui/themes/base/all.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/flat-ui.css"/>
+    <link rel="stylesheet" href="directives/stars/stars.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- endbuild -->
+</head>
+<body>
+
+
+<div class="navbar navbar-default">
+    <div class="navbar-header">
+        <a href="#" class="navbar-brand">AngularJs</a>
+    </div>
+</div>
+<div ng-if="loading">
+    Chargement ....
+</div>
+
+<div ui-view id="content"></div>
+
+
+<!-- build:js scripts/combined.js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jqueryui/jquery-ui.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/flat-ui/dist/js/flat-ui.js"></script>
+<script src="bower_components/angularjs/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/countrySelect/angular.country-select.js"></script>
+
+<script src="root-module.js"></script>
+
+
+<script src="modules/home-module/home-module.js"></script>
+<script src="modules/home-module/controllers/home-controller.js"></script>
+<script src="modules/home-module/services/home-factory.js"></script>
+<!--<script src="modules/home-module/services/home-service.js"></script>-->
+<!--<script src="modules/home-module/services/home-provider.js"></script>-->
+
+<script src="modules/tabs-module/tabs-module.js"></script>
+
+<script src="modules/comments-module/comments-module.js"></script>
+<script src="modules/comments-module/controllers/comments-controller.js"></script>
+
+<script src="modules/resource-module/resource-module.js"></script>
+<script src="modules/resource-module/controllers/resource-controller.js"></script>
+<script src="modules/resource-module/services/resource-factory.js"></script>
+
+
+<script src="directives/stars/stars.js"></script>
+<script src="directives/comment/comment.js"></script>
+<script src="directives/time/time.js"></script>
+<script src="directives/transclude/transclude.js"></script>
+<script src="directives/tabs/tabs.js"></script>
+<script src="plugins/datepicker.js"></script>
+
+
+
+<!-- endbuild -->
+
+</body>
+</html>

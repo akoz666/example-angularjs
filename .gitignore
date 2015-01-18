@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+node_modules
+app/bower_components
+app/.bower-registry
+app/.bower-tmp
+app/.bower-cache
+dist
+.idea
